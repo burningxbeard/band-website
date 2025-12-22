@@ -1,0 +1,91 @@
+<section id="videos">
+    <h2 class="section-title">VIDEOS</h2>
+    <p class="content">music video content will occupy this space.</p>
+</section>
+<section id="live-shows">
+    <h2 class="section-title">LIVE SHOWS</h2>
+    <p class="content">dynamic content containing live show dates goes here</p>
+</section>
+<section id="merch">
+    <h2 class="section-title">MERCH</h2>
+    <p class="content">preview images of merch and links to official store.</p>
+    <div class="merch">
+        <article class="shirt-card"><img class="fake" src="/src/assets/images/fakeshirt.jpg" alt="image of fake shirt">
+            <h4>Fake Shirt for One</h4>
+            <p class="price">Price: $25.00</p></article>
+        <article class="shirt-card"><img class="fake" src="/src/assets/images/fakeshirt.jpg" alt="image of fake shirt">
+        <h4>Fake Shirt numero dos</h4>
+            <p class="price">Price: $35.00</p></article>
+        </article>
+        <article class="shirt-card"><img class="fake" src="/src/assets/images/fakeshirt.jpg" alt="image of fake shirt">
+        <h4>Fake T-shirt Number Three</h4>
+            <p class="price">Price: $35.00</p></article>
+        </article>
+        <article class="shirt-card"><img class="fake" src="/src/assets/images/fakeshirt.jpg" alt="image of fake shirt">
+        <h4>Fake Shirt numero quatro</h4>
+            <p class="price">Price: $35.00</p></article>
+        </article>
+        <article class="shirt-card"><img class="fake" src="/src/assets/images/fakeshirt.jpg" alt="image of fake shirt">
+        <h4>Fake Shirt Cinco</h4>
+            <p class="price">Price: $35.00</p></article>
+        </article>
+        
+    </div>
+</section>
+<section id="news">
+    <h2 class="section-title">NEWS</h2>
+    <p class="content">news and blog posts will sit here in this space</p>
+</section>
+
+
+<style>
+    .section-title {
+        margin: 0;
+        color: darkgrey;
+        font-size: 3rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 200;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    .content {
+        padding: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: .875;
+    }
+    h4 {
+        margin-bottom: 0;
+        line-height: .875;
+    }
+    .fake {
+        max-width: 100%;
+    }
+    .merch {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .shirt-card {
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        }
+    .price {
+        margin: .5rem;
+    }
+    img {
+        max-width: 200px;
+    }
+
+    @media screen (max-width: 1000px) {
+        .shirt-card
+    }
+</style>
