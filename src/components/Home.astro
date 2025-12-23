@@ -13,7 +13,6 @@ import myImage from '../assets/images/fakeshirt.jpg';
 </section>
 <section id="merch">
     <h2 class="section-title">MERCH</h2>
-    <p class="content">preview images of merch and links to official store.</p>
     <div class="merch">
         <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt"></Image>
             <h4>Fake Shirt for One</h4>
@@ -47,7 +46,7 @@ import myImage from '../assets/images/fakeshirt.jpg';
 
 <style>
     .section-title {
-        margin: 0;
+        margin-bottom: 2rem;
         color: darkgrey;
         font-size: 3rem;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -60,18 +59,20 @@ import myImage from '../assets/images/fakeshirt.jpg';
         padding: 0 1rem;
     }
     .content {
-        padding: 3rem;
+        padding: 1rem;
     }
     h2 {
         font-size: 2rem;
         line-height: .875;
     }
     h4 {
+        margin-left: 1.5rem;
         margin-bottom: 0;
         line-height: .875;
     }
     .fake {
         max-width: 100%;
+        height: auto;
     }
     .merch {
         display: grid;
@@ -79,6 +80,7 @@ import myImage from '../assets/images/fakeshirt.jpg';
         gap: 1rem;
         align-items: center;
         margin-bottom: 3rem;
+        margin-top: 1rem;
     }
     .shirt-card {
         background-color: white;
@@ -87,7 +89,8 @@ import myImage from '../assets/images/fakeshirt.jpg';
         width: fit-content;
         }
     .price {
-        margin: .5rem;
+        color: red;
+        margin-left: 1.5rem;
     }
 
     @media (min-width: 1000px) {
