@@ -15,24 +15,26 @@ import myImage from '../assets/images/fakeshirt.jpg';
     <h2 class="section-title">MERCH</h2>
     <p class="content">preview images of merch and links to official store.</p>
     <div class="merch">
-        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt">
+        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt"></Image>
             <h4>Fake Shirt for One</h4>
             <p class="price">Price: $25.00</p></article>
-        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt">
+        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt"></Image>
         <h4>Fake Shirt numero dos</h4>
             <p class="price">Price: $35.00</p></article>
         </article>
-        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt">
+        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt"></Image>
         <h4>Fake T-shirt Number Three</h4>
             <p class="price">Price: $35.00</p></article>
         </article>
-        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt">
+        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt"></Image>
         <h4>Fake Shirt numero quatro</h4>
             <p class="price">Price: $35.00</p></article>
         </article>
-        <article class="shirt-card"><Image class="fake" src={myImage} alt="image of fake shirt">
-        <h4>Fake Shirt Cinco</h4>
-            <p class="price">Price: $35.00</p></article>
+        <article class="shirt-card">
+            <Image class="fake" src={myImage} alt="image of fake shirt"></Image>
+                <h4>Fake Shirt Cinco</h4>
+                <p class="price">Price: $35.00</p>
+            </article>
         </article>
         
     </div>
@@ -82,16 +84,25 @@ import myImage from '../assets/images/fakeshirt.jpg';
         background-color: white;
         color: black;
         padding: 1rem;
+        width: fit-content;
         }
     .price {
         margin: .5rem;
     }
-    img {
-        max-width: 200px;
-    }
 
-    @media screen (max-width: 1000px) {
-        .shirt-card
+    @media (min-width: 1000px) {
+        section {
+            margin: 0 auto;
+            width: 1440px;
+        }
+        .shirt-card {
+            padding: 0;
+        }
+        .merch {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+        }
     }
     
 </style>
